@@ -1,54 +1,49 @@
-#main-container{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-columns: auto auto auto;
-
-}
-#item1 {
-       grid-column-start: 1;
-       grid-column-end:3;
-       grid-row-start: 1;
-       grid-row-end: 4;
-       background-color:darkblue;
+/* Pamatstili */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-#item2{
-    grid-row-start: 1;
-    grid-row-end: 4;
-background-color: bisque;
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-#item3{
-
- background-color: firebrick;
+nav {
+    background-color: #555;
+    text-align: center;
+    padding: 5px;
 }
 
-#item4{
-
-   background-color: orange;  
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
 }
 
-#item5{
-
- background-color: green;
+/* Galvenais saturs */
+#main-container {
+    display: flex;
+    margin: 10px;
 }
 
-#item6{
-
-   background-color: coral;
+#side-content {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
 
-#item7{
-
-    background-color: yellow;
+#photo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 70%;
+    gap: 10px;
 }
 
-#item8{
-
-  background-color: purple;
-}
-
-#item9{
-
-   background-color:brown;
+#photo-container img {
+    width: 100%;
+    height: auto;
 }
