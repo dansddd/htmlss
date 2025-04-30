@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World!</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="center-container">
+            <img 
+                onclick="click_Handler()" 
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg" 
+
+                style="width: 300px; height: auto; cursor: pointer; border-radius: 10px;"
+            >
+
+            <p>Points: <span id="points">0</span></p>
+
+            <input type="button" id="upgrade1" value="15" onclick="upgrade_handler()">
+            
+            <button onclick="buy_power_level()">Buy Power Level</button>
+            
+            <p>Power Level: <span id="powerLevelDisplay">1</span></p>
+            <p>Next Power Price: <span id="powerPrice">50</span></p>
+        </div>
+    </div>
+</body>
+</html>
